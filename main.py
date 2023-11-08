@@ -6,7 +6,7 @@ def main():
     file_name = sys.argv[1]
 
     if sys.argv[2] != None:
-        instance = gg.get_instance(file_name, sys.argv[2])
+        instance = gg.get_instance(file_name, int(sys.argv[2]))
     else:
         gg.get_instance(file_name)
 
